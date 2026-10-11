@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy — Learn Japanese</title>
+    <meta
+      name="description"
+      content="Privacy Policy for Learn Japanese for Beginners. Offline learning progress stays on your device. No account, ads, or tracking SDK."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#content">Skip to content</a>
+    <header class="top">
+      <div class="top-inner">
+        <a class="brand" href="index.html">
+          <span class="mark" lang="ja" aria-hidden="true">あ</span>
+          <span class="brand-name">Learn Japanese</span>
+        </a>
+        <nav aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="privacy.html" aria-current="page">Privacy Policy</a>
+          <a href="support.html">Support</a>
+        </nav>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="hero-inner">
+        <p class="kicker">United States App Store</p>
+        <h1>Privacy Policy</h1>
+        <p class="lede">
+          Effective date: 11 October 2026. This policy describes the Learn
+          Japanese for Beginners app as inspected in source. It is not legal
+          advice.
+        </p>
+      </div>
+    </section>
+    <main id="content">
+      <div class="wrap">
+        <article class="panel">
+          <h2>1. Application and developer</h2>
+          <p>
+            This policy applies to <strong>Learn Japanese for Beginners</strong>
+            (home-screen name <strong>Learn Japanese</strong>), bundle identifier
+            <code>com.bekirsucikaran.learnjapanese</code>, including the Apple
+            Watch companion
+            <code>com.bekirsucikaran.learnjapanese.watchkitapp</code>.
+          </p>
+          <p>
+            The app is an offline beginner Japanese course for iPhone, iPad, and
+            Apple Watch. The operator of this website is the app’s developer,
+            Bekir Sucikaran. There is no documented public support email in the
+            application source. Privacy questions can be sent through
+            <a href="https://github.com/bekirs01/learn-japanese-legal/issues"
+              >GitHub Issues on this public legal repository</a
+            >
+            (a GitHub account is required to open an issue).
+          </p>
+
+          <h2>2. Summary</h2>
+          <p>
+            The app does not require an account. Core lessons, quizzes,
+            favorites, and progress work without the internet. This version does
+            not include advertising, analytics, crash-reporting, social login,
+            Firebase, Supabase, or a developer-operated backend. Learning data
+            is stored on your device, not on our servers — this app has none.
+          </p>
+          <p class="note">
+            Apple’s privacy manifests shipped with the iPhone and Watch apps
+            declare that the app does not track users, lists no collected data
+            types for App Privacy reporting, and declares UserDefaults access
+            with reason CA92.1 (app functionality).
+          </p>
+
+          <h2>3. Information stored on your device</h2>
+          <p>
+            The app stores a small set of preferences in on-device key-value
+            storage (Apple UserDefaults via the Flutter
+            <code>shared_preferences</code> plugin). This information is used
+            only to run the app on that device:
+          </p>
+          <ul>
+            <li>Interface / translation language</li>
+            <li>Favorite word and phrase identifiers</li>
+            <li>Learned word and phrase identifiers</li>
+            <li>Quiz misses used for wrong-answer review</li>
+            <li>Sound-effect and haptics on/off switches</li>
+            <li>
+              Apple Watch learning draft (items you chose to send to the Watch)
+            </li>
+          </ul>
+          <p>
+            Uninstalling the iPhone app (and the Watch app, if installed)
+            removes this storage. You can also clear favorites, learned items,
+            and quiz misses inside the app.
+          </p>
+
+          <h2>4. Audio and pronunciation</h2>
+          <p>
+            Speaker controls speak Japanese script using the operating system’s
+            text-to-speech engine (<code>ja-JP</code>, Kyoko when that voice is
+            installed) through the <code>flutter_tts</code> plugin. This version
+            ships <strong>no bundled studio or educational speech recordings</strong>
+            for lessons. Interface tap sounds are short files bundled in the app
+            and played locally with <code>audioplayers</code>.
+          </p>
+          <p>
+            The app does not record your voice, does not use the microphone, and
+            does not use speech recognition. We do not ship a cloud speech API
+            key. When a Japanese voice is installed, synthesis is expected to
+            stay on the device. We cannot promise that every operating-system
+            TTS implementation never contacts its vendor; that behavior belongs
+            to Apple or Google, not to a server of ours.
+          </p>
+
+          <h2>5. Apple Watch</h2>
+          <p>
+            If you use the companion Watch app, the iPhone can send words and
+            phrases you select to your paired Watch using Apple Watch
+            Connectivity. That transfer stays between your devices. The Watch
+            may keep the latest items in on-device storage so they remain
+            available when the iPhone is not nearby. The Watch does not download
+            a separate cloud catalog.
+          </p>
+
+          <h2>6. Network communication</h2>
+          <p>
+            Lessons, quizzes, and progress do not require the internet. The
+            Android release manifest in source does not declare INTERNET
+            permission. Debug or profile Android builds used by Flutter tooling
+            may include network permission for development; that is not required
+            for the lesson catalog.
+          </p>
+
+          <h2>7. Purchases</h2>
+          <p>
+            This version does not include in-app purchases, subscriptions, or
+            StoreKit products. Apple’s App Store may still process the free
+            download of the app. We do not receive card numbers or Apple ID
+            passwords.
+          </p>
+
+          <h2>8. Analytics, tracking, and advertising</h2>
+          <p>
+            This binary does not include an analytics SDK, crash reporter,
+            advertising SDK, or tracking across other companies’ apps. It does
+            not use App Tracking Transparency because it does not track.
+          </p>
+
+          <h2>9. Third-party software in the app</h2>
+          <p>
+            The app is built with Flutter. Production Dart dependencies used for
+            user-facing behavior are:
+          </p>
+          <ul>
+            <li>
+              <code>shared_preferences</code> — on-device preferences
+            </li>
+            <li>
+              <code>audioplayers</code> — local playback of bundled interface
+              sounds
+            </li>
+            <li>
+              <code>flutter_tts</code> — operating-system Japanese speech
+            </li>
+            <li><code>characters</code> — Unicode text handling</li>
+          </ul>
+          <p>
+            These plugins are not used here to send your learning data to their
+            publishers. Apple provides iOS, iPadOS, watchOS, Watch Connectivity,
+            UserDefaults, and speech synthesis as operating-system features.
+          </p>
+
+          <h2>10. Data we do not collect</h2>
+          <p>
+            We do not collect name, email, phone number, address, payment
+            details, location, contacts, photos, camera or microphone
+            recordings, browsing history, advertising identifiers, cookies, or
+            diagnostics sent to us. We do not operate an account or profile
+            server for this app.
+          </p>
+          <p>
+            “No Data Collected” in App Store Connect is intended to mean: this
+            binary does not collect data off-device for the developer. Local
+            UserDefaults still exist on the device, as described above.
+          </p>
+
+          <h2>11. Data retention and deletion</h2>
+          <p>
+            Because we do not receive your learning data, we do not retain it on
+            our systems. Delete the app to remove on-device storage. Opening an
+            issue on the public legal repository stores whatever you choose to
+            type there, under GitHub’s terms, so that we can answer your
+            question.
+          </p>
+
+          <h2>12. Children’s privacy</h2>
+          <p>
+            The course is general education. It does not require an account and
+            does not collect personal information from anyone, including
+            children. A parent or guardian may install and use the app without
+            creating a profile. Complete Apple’s age questionnaire in App Store
+            Connect honestly when submitting the app.
+          </p>
+
+          <h2>13. Security</h2>
+          <p>
+            Learning state stays in the platform key-value store on your device.
+            There is no developer login, cloud backup of that state, or
+            application server to harden. Protect the device with the lock
+            screen and operating-system updates you already use.
+          </p>
+
+          <h2>14. International users</h2>
+          <p>
+            The App Store listing targeted by this policy is English (U.S.).
+            The app’s study language is Japanese. The interface can be set to
+            several learner languages. Local storage remains on the device
+            wherever you use the app. If you contact us through GitHub Issues,
+            GitHub may process that message on its own infrastructure.
+          </p>
+
+          <h2>15. Privacy rights</h2>
+          <p>
+            Because we do not hold an account or a copy of your favorites on our
+            servers, there is no cloud profile for us to export or erase. You
+            control on-device data by using in-app controls or deleting the app.
+            You may still ask a privacy question through the Issues link above.
+          </p>
+
+          <h2>16. Policy updates</h2>
+          <p>
+            If a later version adds accounts, analytics, advertising, paid
+            unlocks, or cloud speech, this policy and the App Store privacy
+            disclosures will be updated before that version ships. The effective
+            date at the top of this page will change.
+          </p>
+
+          <h2>17. Contact</h2>
+          <p>
+            Support and privacy requests:
+            <a href="https://github.com/bekirs01/learn-japanese-legal/issues"
+              >github.com/bekirs01/learn-japanese-legal/issues</a
+            >.
+            See also the
+            <a href="support.html">Support page</a>.
+          </p>
+        </article>
+      </div>
+    </main>
+    <footer>
+      <div class="foot-inner">
+        <span>Effective 11 October 2026</span>
+        <span>
+          <a href="index.html">Home</a>
+          ·
+          <a href="support.html">Support</a>
+        </span>
+      </div>
+    </footer>
+  </body>
+</html>
